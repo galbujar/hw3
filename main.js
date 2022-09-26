@@ -1,7 +1,6 @@
 let userChoice = prompt("heads or tails?")
-let randomNumber = Math.floor(Math.random()*2)? 0 : 1;
+let randomNumber = Math.floor(Math.random()*2)
 console.log(randomNumber)
-let computerChoice = randomNumber
 if (randomNumber === 0){
     computerChoice = "heads";
 }else{
@@ -9,10 +8,10 @@ if (randomNumber === 0){
 }
 console.log(computerChoice)
 
-if (userChoice = computerChoice){
+if (userChoice === computerChoice){
     alert("You guessed right! The coin flip landed on " + userChoice);
-}else if (userChoice != computerChoice){
-    alert("Sorry, the coin flip landed on " + !userChoice);
+}else{
+    alert("Sorry, the coin flip landed on " + computerChoice);
 }
 
 let birthYear = prompt("What year were you born in?")
